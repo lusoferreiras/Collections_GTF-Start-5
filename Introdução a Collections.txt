@@ -1,0 +1,18 @@
+Collection => Set | List | Queue
+
+Set => HashSet => LinkedHashSet| => SortedSet => NavigableSet => TreeSet
+. Não Permite elementos duplicados
+. Não possui índice
+
+List => ArrayList | Vector | LinkedList
+- Elementos duplicados e garante ordem de inserção
+-_ArrayList deve ser usado onde mais operações de pesquisa são necessárias, e LinkedList deve ser usado onde mais operações de inserção e exclusão são necessárias.
+
+Queue => LinkedList | PriorityQueue
+
+Object => Arrys | Collections
+
+Map => Hashtable | HashMap => LinkedHashMap | => SortedMap => NavigableMap => Tree
+
+*implementes
+*extends
