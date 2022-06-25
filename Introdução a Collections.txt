@@ -4,9 +4,12 @@ Set => HashSet => LinkedHashSet| => SortedSet => NavigableSet => TreeSet
 . Não Permite elementos duplicados
 . Não possui índice
 
+-_HashSet mostra os elementos em Ordem aleatória
+
 List => ArrayList | Vector | LinkedList
 - Elementos duplicados e garante ordem de inserção
 -_ArrayList deve ser usado onde mais operações de pesquisa são necessárias, e LinkedList deve ser usado onde mais operações de inserção e exclusão são necessárias.
+-_LinkedList os elementos na sequência em que foram adicionados.
 
 Queue => LinkedList | PriorityQueue
 

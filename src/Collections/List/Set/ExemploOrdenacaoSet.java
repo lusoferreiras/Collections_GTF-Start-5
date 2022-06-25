@@ -1,6 +1,7 @@
 package Collections.List.Set;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.Objects;
 import java.util.Set;
 
@@ -18,15 +19,27 @@ public class ExemploOrdenacaoSet {
         System.out.println("--\tOrdem aleatória\t--");
         Set<Serie> minhasSeries = new HashSet<>();{
             {
-                minhasSeries.add(new Serie("got", "fantasia", 60));
+                minhasSeries.add(new Serie("GOT", "fantasia", 60));
                 minhasSeries.add(new Serie("dark", "drama", 60));
-                minhasSeries.add(new Serie("that 70's show", "comédia", 25));
+                minhasSeries.add(new Serie("That 70's show", "comédia", 25));
             }};
 
         for (Serie serie: minhasSeries) System.out.println(serie.getNome()+
-                " - "+serie.getGenero()+" - "+serie.getTempoEpisodio());
+                " | "+serie.getGenero()+" | "+serie.getTempoEpisodio()+"min");
+
+        System.out.println("--\tOrdem aleatória\t--");
+        Set<Serie> minhasSeries1 = new LinkedHashSet<>();{
+            {
+                minhasSeries1.add(new Serie("GOT", "fantasia", 60));
+                minhasSeries1.add(new Serie("Dark", "drama", 60));
+                minhasSeries1.add(new Serie("That 70's show", "comédia", 25));
+            }};
+
+        for (Serie serie: minhasSeries1) System.out.println(serie.getNome()+
+                " | "+serie.getGenero()+" | "+serie.getTempoEpisodio()+"min");
     }
-}
+    }
+
 class Serie{
     private String nome;
     private String genero;
