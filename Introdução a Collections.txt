@@ -1,6 +1,6 @@
 Collection => Set | List | Queue
 
-Set => HashSet => LinkedHashSet| => SortedSet => NavigableSet => TreeSet
+Set => HashSet => LinkedHashSet | => SortedSet => NavigableSet => TreeSet
 . Não Permite elementos duplicados
 . Não possui índice
 
@@ -13,9 +13,28 @@ List => ArrayList | Vector | LinkedList
 
 Queue => LinkedList | PriorityQueue
 
-Object => Arrys | Collections
+Object => Arrays | Collections
 
 Map => Hashtable | HashMap => LinkedHashMap | => SortedMap => NavigableMap => Tree
 
+-_HashMap and LinkedHashMap contém a mesma performace, enquanto TrreMap funciona de forma diferente.
+
+-_HashMap atua aleatóriamente(permite key null), LinkedHashMap pela ordem de inserção(permite Key null), e TreeMap pela ordem natural das chaves(não permite Key null)
+
 *implementes
 *extends
+
+
+Stream API
+
+. Classe Anômima
+. Functional Interface
+    - Comparator
+    - Consumer
+    - Function
+    - Predicate
+
+. Lambda: Semalhante a Classe Anônima, simplificado
+. Reference Method: Semalhante a Lambda, simplificado
+. Streams API
+    -Source => Pipeline => Terminal
